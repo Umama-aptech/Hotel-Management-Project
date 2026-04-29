@@ -103,31 +103,34 @@ const Home = () => {
           <div className="search-bar-container">
             <form className="search-bar" onSubmit={handleSearch}>
               <div className="search-item">
-                <label>Check In</label>
+                <label>CHECK IN</label>
                 <input 
                   type="date" 
                   value={searchParams.checkIn}
                   onChange={(e) => setSearchParams({...searchParams, checkIn: e.target.value})}
                   required
+                  placeholder="mm/dd/yyyy"
                 />
               </div>
               <div className="search-item">
-                <label>Check Out</label>
+                <label>CHECK OUT</label>
                 <input 
                   type="date" 
                   value={searchParams.checkOut}
                   onChange={(e) => setSearchParams({...searchParams, checkOut: e.target.value})}
                   required
+                  placeholder="mm/dd/yyyy"
                 />
               </div>
               <div className="search-item">
-                <label>Guests</label>
+                <label>GUESTS</label>
                 <select 
                   value={searchParams.guests}
                   onChange={(e) => setSearchParams({...searchParams, guests: e.target.value})}
                 >
                   <option>1 Adult</option>
                   <option>2 Adults</option>
+                  <option>3 Adults</option>
                   <option>Family</option>
                 </select>
               </div>
