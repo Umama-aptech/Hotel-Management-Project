@@ -1,0 +1,281 @@
+.room-details-page {
+  padding-bottom: 100px;
+}
+
+.room-hero {
+  height: 60vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.room-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.room-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(10, 10, 10, 1), rgba(0, 0, 0, 0.3));
+}
+
+.room-hero-content {
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  z-index: 2;
+}
+
+.back-link {
+  color: #9ca3af;
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.room-hero-content h1 {
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.room-hero-content h1 span {
+  color: #6366f1;
+}
+
+.room-info-container {
+  max-width: 1200px;
+  margin: -40px auto 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  position: relative;
+  z-index: 10;
+  padding: 0 40px;
+}
+
+.info-section {
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 30px;
+}
+
+.info-section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.info-section h2 span {
+  color: #6366f1;
+}
+
+.info-section p {
+  color: #d1d5db;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.amenity-item {
+  color: #9ca3af;
+  font-size: 15px;
+}
+
+.amenity-item i {
+  color: #6366f1;
+  margin-right: 10px;
+}
+
+.facilities-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.facilities-tags span {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.booking-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 120px;
+}
+
+.card-header .price {
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+}
+
+.card-header .per-night {
+  color: #9ca3af;
+  margin-left: 5px;
+}
+
+.booking-specs {
+  margin: 30px 0;
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.spec {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #d1d5db;
+  font-size: 15px;
+}
+
+.spec i {
+  color: #6366f1;
+  width: 20px;
+}
+
+.book-now-btn {
+  width: 100%;
+  padding: 16px;
+  background: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.book-now-btn:hover {
+  background: #4f46e5;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+}
+
+.card-footer {
+  text-align: center;
+  margin-top: 15px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .room-info-container {
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .room-hero-content {
+    left: 20px;
+  }
+  .room-hero-content h1 {
+    font-size: 36px;
+  }
+}
+
+.tour-placeholder {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 350px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.tour-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tour-placeholder:hover img {
+  transform: scale(1.08);
+}
+
+.tour-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(0px);
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.tour-placeholder:hover .tour-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+}
+
+.tour-overlay .play-button {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tour-overlay .play-button i {
+  font-size: 24px;
+  color: white;
+  margin-left: 5px;
+}
+
+.tour-placeholder:hover .play-button {
+  background: #6366f1;
+  border-color: #6366f1;
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.5);
+}
+
+.tour-overlay span {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.tour-overlay p {
+  font-size: 14px;
+  color: #9ca3af !important;
+  font-weight: 400;
+}
+

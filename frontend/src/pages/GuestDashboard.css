@@ -1,0 +1,418 @@
+.luxury-dashboard {
+  padding: 60px 80px 100px;
+  background: #0a0a0a;
+  min-height: 80vh;
+}
+
+.dashboard-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 40px;
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 60px;
+  animation: slideDown 0.8s ease;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  font-weight: 800;
+  color: white;
+  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.loyalty-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.loyalty-badge i {
+  font-size: 14px;
+}
+
+.loyalty-badge.silver {
+  background: linear-gradient(135deg, #94a3b8, #64748b);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.loyalty-badge.gold {
+  background: linear-gradient(135deg, #fbbf24, #d97706);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 15px rgba(251, 191, 36, 0.3);
+}
+
+.loyalty-badge.platinum {
+  background: linear-gradient(135deg, #818cf8, #4f46e5);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
+}
+
+
+.profile-info h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.profile-info h1 span {
+  color: #6366f1;
+}
+
+.profile-info p {
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.edit-profile-toggle {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.edit-profile-toggle:hover {
+  background: #6366f1;
+  color: white;
+  border-color: #6366f1;
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-group {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-group input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  outline: none;
+  font-size: 14px;
+}
+
+.edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.save-btn, .cancel-edit-btn {
+  padding: 8px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.save-btn {
+  background: #6366f1;
+  color: white;
+  border: none;
+}
+
+.cancel-edit-btn {
+  background: transparent;
+  color: #9ca3af;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.profile-stats {
+  display: flex;
+  gap: 30px;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #6366f1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Bookings Section */
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-title h2 span {
+  color: #6366f1;
+}
+
+.section-title p {
+  color: #9ca3af;
+}
+
+.booking-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.booking-luxury-card {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s;
+  animation: fadeInUp 0.6s ease;
+}
+
+.booking-luxury-card:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.booking-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+}
+
+.room-info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.room-info p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.dates-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.date-block label {
+  display: block;
+  font-size: 11px;
+  color: #6366f1;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.date-block span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.dates-info i {
+  color: #4b5563;
+}
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.status-badge.confirmed {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.status-badge.cancelled {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.booking-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-tag {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.price-tag span {
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+  margin-left: 5px;
+}
+
+.action-btns {
+  display: flex;
+  gap: 15px;
+}
+
+.mod-btn, .cancel-btn {
+  padding: 8px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.mod-btn {
+  background: transparent;
+  border: 1px solid #6366f1;
+  color: #6366f1;
+}
+
+.mod-btn:hover {
+  background: #6366f1;
+  color: white;
+}
+
+.cancel-btn {
+  background: transparent;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #ef4444;
+}
+
+.cancel-btn:hover {
+  background: #ef4444;
+  color: white;
+  border-color: #ef4444;
+}
+
+/* Perks */
+.perks-section {
+  margin-top: 60px;
+}
+
+.perk-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 30px;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.perk-card.gold {
+  border-left: 5px solid #fbbf24;
+}
+
+.perk-card i {
+  font-size: 32px;
+  color: #fbbf24;
+}
+
+.perk-card h4 {
+  margin-bottom: 5px;
+}
+
+.perk-card p {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.empty-bookings {
+  text-align: center;
+  padding: 60px;
+}
+
+.empty-bookings i {
+  font-size: 48px;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+.explore-now {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 30px;
+  background: #6366f1;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .luxury-dashboard {
+    padding: 60px 20px;
+  }
+  .booking-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
